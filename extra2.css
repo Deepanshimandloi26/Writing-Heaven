@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    background: url('pexels-thngocbich-636243.jpg') no-repeat center center;
+    opacity: 0.3;
+    /* Set your desired opacity */
+    z-index: -1;
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100px;
+    font-size: 42px;
+
+    position: relative;
+    max-width: 900px;
+    margin: 100px auto;
+    text-align: center;
+    margin-top: -1px;
+    margin-bottom: 40px;
+
+
+}
+
+h1:before {
+    content: " ";
+    height: 3px;
+    width: 120px;
+    background: #05567c;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+h1:after {
+    content: " ";
+    height: 3px;
+    width: 190px;
+    background: #05567c;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+h2 {
+
+    color: #005a69;
+    font-size: 20px;
+    text-decoration: overline 2px #05567c;
+
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 0px 0 12px 0;
+}
+
+img.avatar2 {
+    width: 4%;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+
+}
+
+form {
+    max-width: 90%;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+
+}
+
+.login-container {
+    /* border-radius: 5px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    z-index: 50;
+    /* border: 5px solid #05567c; */
+    margin-left: 36%;
+
+    margin-bottom: 15%;
+    padding: 1%;
+    /* width: 29%; */
+    opacity: 0.5;
+    height: 31vh;
+    color: white;
+    box-sizing: border-box;
+    background-color: #721c24;
+    /* margin: 150px 730px 0px 730px;  */
+}
+
+/* .login-container:hover{
+     background-color: #000000;
+     opacity: 1.0;
+  } */
+
+input[type="text"],
+input[type="password"] {
+    width: 40%;
+    padding: 12px 50px;
+    margin: 8px 90px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border: 1px solid #005a69;
+    box-sizing: border-box;
+}
+
+label {
+    text-align: center;
+    display: block;
+    margin: 2px 0px 0px 5px;
+
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+
+.buttons {
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    color: white;
+    text-align: center;
+    display: inline-block;
+    background-color: #013d5f;
+    border: 1px solid rgb(175, 195, 240);
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: green;
+}
+
+button#cancelButton {
+    background-color: #dc3545;
+    font-size: 13px;
+
+
+    display: inline-block;
+    background-color: red;
+
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+
+    color: white;
+    display: inline-block;
+
+}
+
+
+button#cancelButton:hover {
+    opacity: 0.8;
+    background-color: rgb(173, 2, 2);
+}
+
+a {
+    display: block;
+    float: right;
+
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.forgotPassword::after,
+p::after {
+    content: "\A";
+    white-space: pre;
+    display: block;
+}
+
+#alertBox {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 1832px) {
+
+    .login-container {
+
+        height: 44vh;
+    }
+
+
+}
+
+
+@media (max-width: 1024px) {
+
+    .login-container {
+
+        height: 44vh;
+        width: 45%;
+        margin-left: 27%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .login-container {
+
+        height: 24vh;
+
+    }
+
+
+}
+
+@media (max-width: 425px) {
+    .imgcontainer {
+        text-align: center;
+        margin: 26px 0 16px 0;
+    }
+
+    img.avatar2 {
+        width: 12%;
+
+    }
+
+    .login-container {
+
+        height: 10vh;
+    }
+
+    .login-container {
+
+        margin-left: 0px;
+    }
+}
+
+
+/* 320:phone
+  480px:phones landscape
+  768px:tablets
+  1024px: tablet in landscape or small desktops
+  1200px:for large destops */
+
+@media (max-width:1440px) {
+
+    h1 {
+        font-weight: 100px;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    img.avatar2 {
+        width: 3%;
+
+    }
+
+    div.login-container {
+        height: 40vh;
+        width: 35%;
+        margin: auto;
+    }
+
+    label {
+
+        margin-bottom: 5px;
+
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 35%;
+        margin: 0px 0px 0px 0px;
+        margin-bottom: 5px;
+    }
+
+    .options {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    a {
+
+        margin-top: 16px;
+    }
+}

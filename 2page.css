@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.bg::before {
+  content: '';
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  background: url('pexels-thngocbich-636243.jpg') no-repeat center center;
+  opacity: 0.3; /* Set your desired opacity */
+  z-index: -1;
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body{
+ display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 100px;
+  font-size: 42px;
+  position: relative;
+  color:white;
+}
+h1:before {
+  content: " ";
+  height: 3px;
+  width: 200px;
+  background: #c9a85f;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+h1:after {
+  content: " ";
+  height: 3px;
+  width: 200px;
+  background: #c9a85f;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15%;
+}
+h2 {
+  color: #c9a85f;
+  font-size: 24px;
+  text-decoration: underline 2px #c9a85f;
+  padding:1%;
+}
+h2:hover{
+  text-decoration: overline;
+}
+div.bg-img{
+  text-align: center;
+    margin-top: 40px;
+    width: 1500px;
+}
+img.avatar2 {
+  width: 4.5%;
+  border-radius: 50%;
+}
+
+.login-container{
+  
+  margin-top: 5px;
+  width: auto;
+ 
+margin: auto;
+ justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 50;
+  margin-left: 36%;
+   opacity: 0.5; 
+  height: auto;
+  color: rgb(255, 255, 255);
+  background-color: black;
+    box-sizing: border-box;
+    border: 5px solid #05567c;
+    padding:15px;
+    padding-bottom: 30px;
+}
+ .login-container:hover{
+     background-color: #000000;
+     opacity: 1.0;
+  } 
+  label{
+    margin:10px;
+  }
+  input[type="text"],
+input[type="password"] 
+{
+    width: 40%;
+    padding: 8px 30px;
+    margin: 8px 90px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* border: 1px solid #005a69; */ 
+  }
+  .options {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.buttons {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 0px;
+  cursor: pointer;
+  margin:28px;
+}
+button {
+  width:50%;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  background-color: #013d5f;
+  border: 1px solid rgb(175, 195, 240);
+}
+button:hover {
+  opacity: 0.8;
+  background-color: green;
+}
+button#cancelButton {
+  background-color: #dc3545;}a {
+    display: block;
+    float: right;
+
+    color: #007bff;
+    text-decoration: none;
+}
+/* a{
+  padding-bottom: 23px;
+} */
+a:hover {
+  text-decoration: underline;
+}
+div.new{
+  float:left;
+  cursor: pointer;
+ 
+}
+.new:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.new:after{
+  content:'Wanna be new member?';
+ 
+}
+.new:hover:after{
+  content:' SIGN UP';
+  color: white;
+  background-color: #1c5902;
+  border: 2px solid rgb(175, 195, 240);
+  width:23px;
+}
+
+
+.hidden {
+  display: none;
+}
+#alertBox {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1440px){
+
+  div.bg-img{
+    
+      margin-top: 20px;
+      width: 1000px;
+}
+h1 {
+  font-size: 28px;}
+
+  h1:before {
+    width: 130px;
+    top: 50%;
+    left: 15%;
+  }
+  h1:after {
+    width: 130px;
+    top: 50%;
+    right: 15%;
+  }
+    h2 {
+       font-size: 18px;
+    padding:1%;}}
+    
+.login-container{
+  width: 40%;
+margin: auto;
+ padding-bottom: 30px;
+}
+
+@media (max-width: 1024px){
+
+  div.bg-img{
+    
+      margin-top: 20px;
+      width: 1000px;
+}}
+
+@media (max-width: 320px){
+  div.bg-img{
+    
+    margin-top: 50px;
+    width: 1500px;}
+}
